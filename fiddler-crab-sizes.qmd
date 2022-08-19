@@ -8,4 +8,16 @@ editor: visual
 
 ```{r}
 library(lterdatasampler)
+library(tidyverse)
+```
+
+exploratory (unfinalized) plot of fiddler crab carapace widths observed at the different latitudes
+
+```{r}
+crab_gg <- ggplot(data = pie_crab,
+                  aes(x = latitude,
+                      y = size)) +
+  geom_jitter()
+
+crab_gg
 ```
