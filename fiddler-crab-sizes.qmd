@@ -2,6 +2,10 @@
 title: "fiddler-crab-sizes"
 format: html
 editor: visual
+execute: 
+  eval: true
+  warning: false
+  echo: true
 ---
 
 # Fiddler Crabs and Bergmann's Rule
@@ -14,10 +18,11 @@ library(tidyverse)
 exploratory (unfinalized) plot of fiddler crab carapace widths observed at the different latitudes
 
 ```{r}
+#| fig-cap: "this is my caption"
 crab_gg <- ggplot(data = pie_crab,
                   aes(x = latitude,
                       y = size)) +
-  geom_jitter()
-
-crab_gg
+  geom_jitter() 
+#| fig-cap: "this is my caption"
+crab_gg 
 ```
