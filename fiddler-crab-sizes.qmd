@@ -1,0 +1,11 @@
+---
+title: "fiddler-crab-sizes"
+format: html
+editor: visual
+---
+
+# Fiddler Crabs and Bergmann's Rule
+
+```{r}
+library(lterdatasampler)
+```
